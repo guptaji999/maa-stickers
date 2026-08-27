@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"/products -> %{http_code}\\\\n\" http://localhost:3000/products)",
+      "Bash(curl -s -o /dev/null -w \"/admin/login -> %{http_code}\\\\n\" http://localhost:3000/admin/login)"
+    ]
+  }
+}
